@@ -1,0 +1,16 @@
+# Project dependencies
+.cache
+.docz
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+
+.env.*
+.env
+.DS_Store
+package-lock.json
+
+scratch/
+.eslintcache
