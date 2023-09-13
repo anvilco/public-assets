@@ -1,0 +1,8 @@
+/* Host from CDN to allow proper MIME type detection(text/css): https://cdn.jsdelivr.net/gh/anvilco/public-assets/sales-demo-stylesheet.css */
+#signature-accept-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
