@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body,
+.forge-flow {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FAFAFA;
+}
+
+#page-title {
+  margin-bottom: 30px;
+}
+
+/* Removes style marke after page title*/
+#page-title::after {
+  display: none;
+}
+
+.form-group .ant-form-item-label {
+  padding-bottom: 8px;
+}
+
+.form-group label > span {
+  color: #7B858E;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  border: 1px solid #A9C3F2;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+button.circle-icon-button-container[disabled] .button-circle {
+  background: transparent !important;
+}
+
+.forge-flow > div:last-child {
+  background: #f8f8f8;
+  box-shadow: none;
+}
+
+/* Dropdown */
+.form-group .ant-select .ant-select-selector:hover,
+.form-group .ant-select .ant-select-selector:active,
+.form-group .ant-form-item-control .ant-select.ant-select-focused .ant-select-selector {
+  border: 1px solid #A9C3F2;
+  border-right-width: 1px !important;
+}
+
+/* checkbox */
+.ant-checkbox-input:focus+.ant-checkbox-inner,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #263F7E;
+}
+
+.signature-accept-container .signature-accept-content .ant-affix > div {
+  background: #fbfbfc;
+}
+
+.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #263F7E;
+  border-color: #263F7E;
+}
+
+body .ant-input:hover,
+body .ant-input:focus,
+body .ant-input:active,
+body .ant-form-item-has-error .ant-input:hover,
+body .ant-form-item-has-error .ant-input:active,
+body .ant-form-item-has-error .ant-input:focus {
+  border-right-width: 1px !important;
+}
+
+.form-group input:focus,
+.form-group input:hover {
+  border: 1px solid #A9C3F2;
+}
+
+.ant-btn {
+  border-radius: 5px;
+}
+
+.ant-btn.ant-btn-cta,
+.ant-btn.ant-btn-cta:hover,
+.ant-btn.ant-btn-cta:active,
+.ant-btn.ant-btn-cta:focus,
+.ant-btn.ant-btn-cta:disabled,
+.ant-btn.ant-btn-cta:disabled:hover,
+#review-and-sign-btn,
+#review-and-sign-btn:hover,
+#review-and-sign-btn:active,
+#review-and-sign-btn:focus,
+#review-and-sign-btn:disabled,
+#review-and-sign-btn:disabled:hover {
+  background: #263F7E;
+  color: white;
+}
+
+#signature-next-btn,
+.ant-btn.ant-btn-cta {
+  border-radius: 30px;
+}
+
+.ant-btn.ant-btn-link,
+.ant-btn.ant-btn-link:hover,
+.ant-btn.ant-btn-link:active {
+  color: #263F7E;
+}
+
+#signature-accept-btn,
+#signature-accept-btn:hover,
+#signature-accept-btn:active,
+#signature-accept-btn:focus,
+#signature-accept-btn:disabled,
+#signature-accept-btn:disabled:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background: #263F7E;
+  color: #fff;
+}
+
+.signature-action-item .circle-icon[type="info-alt"] {
+  background: #A9C3F2;
+}
+
+.signature-action-item .circle-icon[type='success'] {
+  background: #263F7E;
+}
+
+.ant-btn.ant-btn-cta svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(52deg) brightness(105%) contrast(100%); /* sets the color of the icon to white */
+}
