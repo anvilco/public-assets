@@ -1,4 +1,4 @@
-/* Host from CDN to allow proper MIME type detection(text/css): https://cdn.jsdelivr.net/gh/anvilco/public-assets/sales-demo-stylesheet.css */
+/* Host from CDN to allow proper MIME type detection(text/css): https://cdn.jsdelivr.net/gh/anvilco/public-assets/demo-stylesheet.css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 body,
