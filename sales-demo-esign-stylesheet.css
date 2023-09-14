@@ -12,7 +12,7 @@
 }
 
 /* Sticky header */
-.signature-accept-content .ant-affix > div {
+.signature-accept-container .signature-accept-content .ant-affix > div {
   background: #fbfbfc;
 }
 
