@@ -15,7 +15,7 @@
 .signature-accept-container .signature-accept-content .ant-affix > div {
   background: #fbfbfc;
 }
-
+/* Signature page */
 .basic-layout > div:first-child {
   padding-top: 0;
 }
@@ -24,6 +24,15 @@
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
+}
+
+.signature-accept-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.signature-accept-content {
+  margin: 0;
 }
 
 /* Signature button */
