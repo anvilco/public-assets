@@ -16,6 +16,16 @@
   background: #fbfbfc;
 }
 
+.basic-layout > div:first-child {
+  padding-top: 0;
+}
+
+.basic-layout > div:first-child > div {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
 /* Signature button */
 #signature-next-btn {
   border-radius: 30px;
