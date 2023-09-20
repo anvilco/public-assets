@@ -202,3 +202,7 @@ button.circle-icon-button-container .button-circle:hover {
 #socialSecurityNumber {
   width: 320px;
 }
+
+.loading-spinner {
+  border-left-color: #263F7E;
+}
