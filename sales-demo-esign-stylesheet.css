@@ -27,7 +27,7 @@
 }
 
 .basic-layout > div:first-child {
-  padding-top: 0;
+  padding-top: 30px;
 }
 
 .basic-layout > div:first-child > div {
