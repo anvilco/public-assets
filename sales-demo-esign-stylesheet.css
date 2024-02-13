@@ -16,6 +16,11 @@
   background: #fbfbfc;
 }
 /* Signature page */
+#header-title,
+#page-title {
+  display: none;
+}
+
 .basic-layout > div:first-child {
   padding-top: 0;
 }
