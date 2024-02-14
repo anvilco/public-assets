@@ -8,7 +8,12 @@ body,
 
 /* Signature page */
 .basic-layout > div:first-child {
-  padding-top: 0;
+  padding-top: 30px;
+}
+
+#header-title,
+#page-title {
+  display: none;
 }
 
 .basic-layout > div:first-child > div {
