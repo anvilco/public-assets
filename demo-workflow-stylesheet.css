@@ -19,7 +19,7 @@ body,
 .basic-layout > div:first-child > div {
   margin-left: 0;
   margin-right: 0;
-  padding-left: 0;
+  padding-left: 10px;
 }
 
 #page-title {
@@ -169,7 +169,7 @@ body .ant-form-item-has-error .ant-input:focus {
 .forge-page {
   display: flex;
   align-items: flex-start;
-  padding-left: 10px;
+  padding-left: 0;
   padding-top: 20px;
 }
 
