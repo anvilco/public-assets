@@ -8,7 +8,7 @@ body,
 
 /* Signature page */
 .basic-layout > div:first-child {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #header-title,
@@ -20,6 +20,10 @@ body,
   margin-left: 0;
   margin-right: 0;
   padding-left: 10px;
+}
+
+.basic-layout > div:first-child > div:first-child {
+  margin: 0;
 }
 
 #page-title {
@@ -170,7 +174,7 @@ body .ant-form-item-has-error .ant-input:focus {
   display: flex;
   align-items: flex-start;
   padding-left: 0;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .forge-page > div:first-child {
