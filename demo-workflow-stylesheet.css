@@ -23,7 +23,6 @@ body,
 .basic-layout > div:first-child > div {
   margin-left: 0;
   margin-right: 0;
-  padding-left: 10px;
 }
 
 .basic-layout > div:first-child > div:first-child {
@@ -177,7 +176,7 @@ body .ant-form-item-has-error .ant-input:focus {
 .forge-page {
   display: flex;
   align-items: flex-start;
-  padding-left: 0;
+  padding-left: 10px;
   padding-top: 0;
 }
 
