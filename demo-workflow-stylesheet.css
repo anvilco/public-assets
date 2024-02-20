@@ -16,6 +16,10 @@ body,
   display: none;
 }
 
+.forge-flow .forge-page #page-title {
+  display: block;
+}
+
 .basic-layout > div:first-child > div {
   margin-left: 0;
   margin-right: 0;
@@ -181,10 +185,6 @@ body .ant-form-item-has-error .ant-input:focus {
   max-width: 600px;
 }
 
-.forge-flow {
-  max-width: 600px;
-}
-
 /* Stepbar */
 .forge-flow > div:last-child {
   background: #fbfbfc;
@@ -192,7 +192,8 @@ body .ant-form-item-has-error .ant-input:focus {
 }
 
 .forge-flow > div:last-child > div:first-child {
-  max-width: 600px;
+  max-width: 100%;
+  padding: 0;
 }
 
 /* Powered by Anvil */
