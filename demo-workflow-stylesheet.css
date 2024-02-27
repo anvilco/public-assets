@@ -206,3 +206,19 @@ button.circle-icon-button-container .button-circle:hover {
 .loading-spinner {
   border-left-color: #263F7E;
 }
+
+[data-cy="editorNavTitle"] .ant-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background: #263F7E;
+  color: #553f3f;
+}
+
+[data-cy="editorNavTitle"] {
+  background: transparent;
+  padding-left: 38px;
+  padding-right: 38px;
+}
