@@ -8,13 +8,25 @@ body,
 
 /* Signature page */
 .basic-layout > div:first-child {
-  padding-top: 0;
+  padding-top: 30px;
+}
+
+#header-title,
+#page-title {
+  display: none;
+}
+
+.forge-flow .forge-page #page-title {
+  display: block;
 }
 
 .basic-layout > div:first-child > div {
   margin-left: 0;
   margin-right: 0;
-  padding-left: 0;
+}
+
+.basic-layout > div:first-child > div:first-child {
+  margin: 0;
 }
 
 #page-title {
@@ -44,6 +56,11 @@ body,
 }
 
 /* Dropdown */
+.ant-select-dropdown {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 6px -4px, rgba(0, 0, 0, 0.08) 0px 0px 16px 0px, rgba(0, 0, 0, 0.05) 0px 5px 5px 5px;
+}
+
 .form-group .ant-select .ant-select-selector {
   border-radius: 5px;
   border-color: #A9C3F2;
@@ -160,14 +177,10 @@ body .ant-form-item-has-error .ant-input:focus {
   display: flex;
   align-items: flex-start;
   padding-left: 10px;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .forge-page > div:first-child {
-  max-width: 600px;
-}
-
-.forge-flow {
   max-width: 600px;
 }
 
@@ -178,7 +191,8 @@ body .ant-form-item-has-error .ant-input:focus {
 }
 
 .forge-flow > div:last-child > div:first-child {
-  max-width: 600px;
+  max-width: 100%;
+  padding: 0;
 }
 
 /* Powered by Anvil */

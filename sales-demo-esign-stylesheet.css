@@ -15,9 +15,19 @@
 .signature-accept-container .signature-accept-content .ant-affix > div {
   background: #fbfbfc;
 }
+
 /* Signature page */
+#header-title,
+#page-title {
+  display: none;
+}
+
+#signature-pad {
+  border-radius: 5px;
+}
+
 .basic-layout > div:first-child {
-  padding-top: 0;
+  padding-top: 30px;
 }
 
 .basic-layout > div:first-child > div {
