@@ -27,6 +27,7 @@ body,
 
 .basic-layout > div:first-child > div:first-child {
   margin: 0;
+  padding-top: 20px;
 }
 
 #page-title {
@@ -206,6 +207,11 @@ body .ant-form-item-has-error .ant-input:focus {
 
   .secondary-button-container {
     margin-left: auto !important;
+  }
+
+  .basic-layout > div:first-child > div:first-child {
+    margin: 0;
+    padding-top: 0;
   }
 }
 
