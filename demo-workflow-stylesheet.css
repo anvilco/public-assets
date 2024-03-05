@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 body,
 .forge-flow {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #FAFAFA;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fafafa;
 }
 
 /* Signature page */
@@ -43,13 +43,13 @@ body,
 }
 
 .form-group label > span {
-  color: #7B858E;
+  color: #7b858e;
   font-size: 14px;
   font-weight: 600;
 }
 
 .form-group input {
-  border: 1px solid #A9C3F2;
+  border: 1px solid #a9c3f2;
   border-radius: 5px;
   font-size: 14px;
   padding: 10px 15px;
@@ -58,26 +58,30 @@ body,
 /* Dropdown */
 .ant-select-dropdown {
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 6px -4px, rgba(0, 0, 0, 0.08) 0px 0px 16px 0px, rgba(0, 0, 0, 0.05) 0px 5px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 6px -4px,
+    rgba(0, 0, 0, 0.08) 0px 0px 16px 0px, rgba(0, 0, 0, 0.05) 0px 5px 5px 5px;
 }
 
 .form-group .ant-select .ant-select-selector {
   border-radius: 5px;
-  border-color: #A9C3F2;
+  border-color: #a9c3f2;
 }
 
 .form-group .ant-select .ant-select-selector:hover,
 .form-group .ant-select .ant-select-selector:active,
-.form-group .ant-form-item-control .ant-select.ant-select-focused .ant-select-selector {
-  border-color: #263F7E;
+.form-group
+  .ant-form-item-control
+  .ant-select.ant-select-focused
+  .ant-select-selector {
+  border-color: #263f7e;
   box-shadow: none;
 }
 
 /* checkbox */
-.ant-checkbox-input:focus+.ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner,
 .ant-checkbox-wrapper:hover .ant-checkbox-inner,
 .ant-checkbox:hover .ant-checkbox-inner {
-  border-color: #263F7E;
+  border-color: #263f7e;
 }
 
 /* Signature */
@@ -99,8 +103,8 @@ body,
 }
 
 .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
-  background-color: #263F7E;
-  border-color: #263F7E;
+  background-color: #263f7e;
+  border-color: #263f7e;
 }
 
 body .ant-input:hover,
@@ -114,7 +118,7 @@ body .ant-form-item-has-error .ant-input:focus {
 
 .form-group input:focus,
 .form-group input:hover {
-  border: 1px solid #263F7E;
+  border: 1px solid #263f7e;
   box-shadow: none;
 }
 
@@ -134,7 +138,7 @@ body .ant-form-item-has-error .ant-input:focus {
 #review-and-sign-btn:focus,
 #review-and-sign-btn:disabled,
 #review-and-sign-btn:disabled:hover {
-  background: #263F7E;
+  background: #263f7e;
   color: white;
 }
 
@@ -146,7 +150,7 @@ body .ant-form-item-has-error .ant-input:focus {
 .ant-btn.ant-btn-link,
 .ant-btn.ant-btn-link:hover,
 .ant-btn.ant-btn-link:active {
-  color: #263F7E;
+  color: #263f7e;
 }
 
 #signature-accept-btn,
@@ -160,24 +164,49 @@ body .ant-form-item-has-error .ant-input:focus {
   align-items: center;
   border-radius: 30px;
   box-sizing: border-box;
-  background: #263F7E;
+  background: #263f7e;
   color: #fff;
 }
 
 .signature-action-item .circle-icon[type="info-alt"] {
-  background: #A9C3F2;
+  background: #a9c3f2;
 }
 
-.signature-action-item .circle-icon[type='success'] {
-  background: #263F7E;
+.signature-action-item .circle-icon[type="success"] {
+  background: #263f7e;
 }
 
-/* w4 form page */
 .forge-page {
-  display: flex;
+  padding-top: 20px;
+}
+
+[data-cy="buttonBarContainer"] {
+  flex-direction: column;
   align-items: flex-start;
-  padding-left: 10px;
-  padding-top: 0;
+}
+
+.secondary-button-container {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  /* w4 form page */
+  .forge-page {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 0;
+  }
+
+  [data-cy="buttonBarContainer"] {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .secondary-button-container {
+    margin-left: auto;
+  }
 }
 
 .forge-page > div:first-child {
@@ -195,22 +224,17 @@ body .ant-form-item-has-error .ant-input:focus {
   padding: 0;
 }
 
-/* Powered by Anvil */
-/* .forge-flow > div:last-child a {
-  display: none;
-} */
-
 /* Stepbar buttons */
 button.circle-icon-button-container[disabled] .button-circle {
   background: transparent !important;
 }
 
 button.circle-icon-button-container .button-circle {
-  background: #A9C3F2;
+  background: #a9c3f2;
 }
 
 button.circle-icon-button-container .button-circle:hover {
-  background: #263F7E;
+  background: #263f7e;
 }
 
 #socialSecurityNumber {
@@ -218,7 +242,7 @@ button.circle-icon-button-container .button-circle:hover {
 }
 
 .loading-spinner {
-  border-left-color: #263F7E;
+  border-left-color: #263f7e;
 }
 
 [data-cy="editorNavTitle"] .ant-btn {
@@ -227,7 +251,7 @@ button.circle-icon-button-container .button-circle:hover {
   align-items: center;
   border-radius: 30px;
   box-sizing: border-box;
-  background: #263F7E;
+  background: #263f7e;
   color: #553f3f;
 }
 
