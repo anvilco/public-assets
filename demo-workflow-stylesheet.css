@@ -186,7 +186,7 @@ body .ant-form-item-has-error .ant-input:focus {
 }
 
 .secondary-button-container {
-  margin-left: 0;
+  margin-left: 0 !important;
   margin-top: 20px;
 }
 
@@ -205,7 +205,7 @@ body .ant-form-item-has-error .ant-input:focus {
   }
 
   .secondary-button-container {
-    margin-left: auto;
+    margin-left: auto !important;
   }
 }
 
