@@ -186,6 +186,27 @@ body .ant-form-item-has-error .ant-input:focus {
   margin-top: 20px;
 }
 
+button svg[class^="icon-"] {
+  fill: white;
+}
+
+.forge-page > div:first-child {
+  max-width: 600px;
+}
+
+/* Stepbar */
+.forge-flow > div:last-child {
+  background: #fbfbfc;
+  box-shadow: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.forge-flow > div:last-child > div:first-child {
+  max-width: 100%;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   /* w4 form page */
   .forge-page {
@@ -199,25 +220,15 @@ body .ant-form-item-has-error .ant-input:focus {
     margin-left: auto !important;
   }
 
+  .forge-flow > div:last-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .basic-layout > div:first-child > div:first-child {
     margin: 0;
     padding-top: 0;
   }
-}
-
-.forge-page > div:first-child {
-  max-width: 600px;
-}
-
-/* Stepbar */
-.forge-flow > div:last-child {
-  background: #fbfbfc;
-  box-shadow: none;
-}
-
-.forge-flow > div:last-child > div:first-child {
-  max-width: 100%;
-  padding: 0;
 }
 
 /* Stepbar buttons */
