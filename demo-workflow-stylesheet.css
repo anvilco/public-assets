@@ -181,11 +181,6 @@ body .ant-form-item-has-error .ant-input:focus {
   padding-top: 20px;
 }
 
-[data-cy="buttonBarContainer"] {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .secondary-button-container {
   margin-left: 0 !important;
   margin-top: 20px;
@@ -198,11 +193,6 @@ body .ant-form-item-has-error .ant-input:focus {
     align-items: flex-start;
     padding-left: 10px;
     padding-top: 0;
-  }
-
-  [data-cy="buttonBarContainer"] {
-    flex-direction: row;
-    align-items: center;
   }
 
   .secondary-button-container {
