@@ -233,10 +233,6 @@ div:has(.ant-checkbox-wrapper) {
     margin: 0;
     padding-top: 0;
   }
-
-  div:has(.ant-checkbox-wrapper) {
-    margin-left: 55px;
-  }
 }
 
 /* Stepbar buttons */
