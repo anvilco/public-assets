@@ -46,7 +46,8 @@
 }
 
 /* Signature button */
-#signature-next-btn {
+#signature-next-btn,
+.ant-btn.ant-btn-cta {
   border-radius: 30px;
 }
 
