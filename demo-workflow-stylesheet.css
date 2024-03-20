@@ -173,8 +173,8 @@ body .ant-form-item-has-error .ant-input:focus {
   color: #fff;
 }
 
-#signature-accept-btn.atn-btn.atn-btn-cta svg path,
-#signature-next-btn.atn-btn.atn-btn-cta svg path {
+#signature-accept-btn.ant-btn.ant-btn-cta svg path,
+#signature-next-btn.ant-btn.ant-btn-cta svg path {
   fill: #fff;
 }
 
@@ -195,7 +195,7 @@ body .ant-form-item-has-error .ant-input:focus {
   margin-top: 20px;
 }
 
-.ant-btn.atn-btn-cta button svg[class^="icon-"] {
+.ant-btn.ant-btn-cta button svg[class^="icon-"] {
   fill: white;
 }
 
