@@ -196,7 +196,7 @@ body .ant-form-item-has-error .ant-input:focus {
   margin-top: 20px;
 }
 
-button.ant-btn.ant-btn-cta svg[class^="icon-"] {
+button.ant-btn.ant-btn-cta svg[class^="icon-"] path {
   fill: white;
 }
 
