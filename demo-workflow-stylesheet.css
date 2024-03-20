@@ -174,6 +174,7 @@ body .ant-form-item-has-error .ant-input:focus {
 }
 
 #signature-accept-btn.ant-btn.ant-btn-cta svg path,
+#accept-signature-btn.ant-btn.ant-btn-cta svg path
 #signature-next-btn.ant-btn.ant-btn-cta svg path {
   fill: #fff;
 }
@@ -195,7 +196,7 @@ body .ant-form-item-has-error .ant-input:focus {
   margin-top: 20px;
 }
 
-.ant-btn.ant-btn-cta button svg[class^="icon-"] {
+button.ant-btn.ant-btn-cta svg[class^="icon-"] {
   fill: white;
 }
 
