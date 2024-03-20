@@ -173,7 +173,8 @@ body .ant-form-item-has-error .ant-input:focus {
   color: #fff;
 }
 
-#signature-accept-btn.atn-btn.atn-btn-cta svg path {
+#signature-accept-btn.atn-btn.atn-btn-cta svg path,
+#signature-next-btn.atn-btn.atn-btn-cta svg path {
   fill: #fff;
 }
 
