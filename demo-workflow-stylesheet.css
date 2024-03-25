@@ -181,9 +181,12 @@ body .ant-form-item-has-error .ant-input:focus {
   padding-top: 20px;
 }
 
+div:has(.button-bar) {
+  margin-left: 0;
+}
+
 .secondary-button-container {
   margin-left: 0 !important;
-  margin-top: 20px;
 }
 
 button svg[class^="icon-"] {
