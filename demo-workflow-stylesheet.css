@@ -103,6 +103,10 @@ body,
   margin: 0;
 }
 
+.signature-accept-actions {
+  max-width: unset;
+}
+
 .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
   background-color: #263f7e;
   border-color: #263f7e;
@@ -169,6 +173,12 @@ body .ant-form-item-has-error .ant-input:focus {
   color: #fff;
 }
 
+#signature-accept-btn.ant-btn.ant-btn-cta svg path,
+#accept-signature-btn.ant-btn.ant-btn-cta svg path
+#signature-next-btn.ant-btn.ant-btn-cta svg path {
+  fill: #fff;
+}
+
 .signature-action-item .circle-icon[type="info-alt"] {
   background: #a9c3f2;
 }
@@ -189,7 +199,7 @@ div:has(.button-bar) {
   margin-left: 0 !important;
 }
 
-button svg[class^="icon-"] {
+button.ant-btn.ant-btn-cta svg[class^="icon-"] path {
   fill: white;
 }
 
@@ -225,6 +235,7 @@ div:has(.ant-checkbox-wrapper) {
 
   .secondary-button-container {
     margin-left: auto !important;
+    margin-top: 0;
   }
 
   .forge-flow > div:last-child {
@@ -237,7 +248,7 @@ div:has(.ant-checkbox-wrapper) {
     padding-top: 0;
   }
 
-  div:has(.ant-checkbox-wrapper) {
+  .ant-checkbox-wrapper {
     margin-left: 55px;
   }
 }
