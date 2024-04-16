@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,300&display=swap');
+
+:root {
+  --primary: #00a298;
+  --primary-40: rgba(0, 162, 152, 0.4);
+  --primary-80: rgba(0, 162, 152, 0.08);
+  --secondary: ;
+  --error: #e55252;
+}
+
+body {
+  font-family: 'Roboto' !important;
+  font-weight: 300;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+  }
+}
+
+#header-title {
+  display: none !important;
+}
+
+body .basic-layout .forge-flow {
+  background: #fff !important;
+}
+
+html ::selection,
+body ::selection {
+  background: var(--primary) !important;
+  color: #222 !important;
+}
+
+/* Controls the border underneath `#page-title`. This is usually the Anvil green color. */
+#page-title::after {
+  display: none;
+}
+
+/* The main submit button for the webform. Background usually the Anvil green color with text as a dark grey. */
+.button-bar .forge-submit {
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+  margin-right: 0;
+}
+
+.button-bar .forge-submit:hover {
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.button-bar .forge-submit:active {
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.button-bar .secondary-button-container {
+  display: none;
+}
+
+.ant-btn > span {
+  white-space: normal;
+  vertical-align: middle;
+}
+
+/*
+      Not an Anvil-specific selector, but for input fields, `<input-field>::placeholder` can be used
+      to select a text input's placeholder. See "Webform input examples" on what to use to select
+      form fields.
+     */
+
+/*
+      Webform styles. These are styles specifically on the webform pages.
+    */
+
+/* This is the submit button when the user confirms all their webform data -- the finish page */
+.button-bar #finish-btn {
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+  margin-right: 0;
+}
+
+/*
+      This is the submit button after a user submits their webform, but before a user signs.
+      The user will click this button to go to the signing page.
+    */
+.button-bar #review-and-sign-btn {
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+}
+
+/**
+      Webform input
+     */
+
+/** Basic text inputs */
+.ant-input,
+.ant-picker {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.ant-input-focused,
+.ant-input:focus,
+.ant-input:hover,
+.ant-picker-focused,
+.ant-select-focused,
+.ant-form-item-has-error .ant-input:hover {
+  border-color: var(--primary) !important;
+  box-shadow: none !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.ant-form-item-control-input-content {
+  display: flex;
+  flex-direction: column;
+  order: 0;
+}
+
+.ant-form-item-control-input-content .ant-form-explain.form-item-help {
+  order: 2;
+  position: relative !important;
+  margin-top: 0 !important;
+  background: none !important;
+  text-align: left;
+  color: var(--error) !important;
+}
+
+.ant-form-item-control-input-content .ant-picker-input {
+  order: 1 !important;
+}
+
+.ant-form-item-has-error .ant-input,
+.ant-form-item-has-error .ant-input-affix-wrapper,
+.ant-form-item-has-error .ant-input-affix-wrapper:hover,
+.ant-form-item-has-error .ant-input-number,
+.ant-form-item-has-error .ant-picker,
+.ant-form-item-has-error
+  .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+div ~ div.fs-mask {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/** Radio buttons */
+.form-group-radiobuttons
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .button-bar
+  .ant-btn.ant-btn-outline-light.ant-btn-lg,
+.form-group-radiobuttons
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .button-bar
+  .ant-btn.ant-btn-outline-light {
+  background: #fff !important;
+  color: #222 !important;
+  border: 1.4px solid rgba(0, 0, 0, 0.1) !important;
+  height: 100%;
+}
+
+.form-group-radiobuttons
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .button-bar
+  .ant-btn.ant-btn-solid-black.ant-btn-lg,
+.form-group-radiobuttons
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .button-bar
+  .ant-btn.ant-btn-solid-black {
+  background: var(--primary-80) !important;
+  color: var(--primary) !important;
+  border: 1.4px solid var(--primary) !important;
+  height: 100%;
+}
+
+.form-group-radiobuttons
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .button-bar
+  .ant-btn:focus {
+  background: var(--primary-80) !important;
+  color: var(--primary);
+  border: 1.4px solid var(--primary) !important;
+  height: 100%;
+}
+
+/** Basic checkbox */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: var(--primary-80);
+}
+
+/** Date dropdowns. This field has dropdowns for month, day and year */
+.ant-picker-dropdown {
+  width: fit-content !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner:before {
+  border-color: var(--primary);
+  border-radius: 5px;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: var(--primary);
+}
+
+.ant-picker-focused,
+.ant-picker:hover,
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: var(--primary);
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: var(--primary);
+}
+
+.ant-picker-today-btn {
+  color: var(--primary);
+}
+
+.ant-picker-cell .ant-picker-cell-inner {
+  border-radius: 5px;
+}
+
+/** Dropdown fields */
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: var(--primary-80);
+  color: var(--primary);
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  .ant-select-item-option-state {
+  color: var(--primary);
+}
+
+/** Dropzone */
+.dropzone {
+  border-color: var(--primary-40);
+  border-radius: 8px;
+}
+
+.dropzone .ant-btn {
+  background-color: var(--primary-80) !important;
+  color: var(--primary) !important;
+}
+
+.dropzone .ant-btn.ant-btn-default span {
+  color: var(--primary) !important;
+}
+
+.dropzone .ant-btn:focus > span {
+  color: #fff !important;
+}
+
+.dropzone .ant-btn:focus,
+.dropzone .ant-btn:focus {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.dropzone .ant-btn svg {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 3px;
+}
+
+.dropzone .ant-btn.ant-btn-faded svg {
+  background: var(--primary);
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  border-radius: 100%;
+}
+
+.dropzone > svg polygon {
+  fill: var(--primary);
+}
+
+.circle-icon {
+  background-color: var(--primary-80) !important;
+}
+
+.circle-icon-button-container div div.content {
+  color: rgb(187, 191, 197);
+}
+
+.form-group-file.label-image
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  div
+  div
+  .ant-btn {
+  font-size: 14px;
+  padding: 2px 6px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  color: #fff !important;
+}
+.form-group-file.label-image
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  div
+  div
+  .ant-btn:focus {
+  background-color: var(--primary-80) !important;
+  color: var(--primary);
+}
+
+.ant-form-item-control-input-content .array-input {
+  border-radius: 8px;
+}
+
+.ant-form-item-control-input-content div div .ant-btn.ant-btn-link {
+  padding: 2px 5px !important;
+  margin-top: 5px;
+}
+
+/** Common button */
+.ant-btn,
+.ant-btn-link {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  padding: 2px 5px !important;
+}
+
+.ant-btn:hover,
+.ant-btn-link:hover {
+  background-color: var(--primary-80) !important;
+  color: var(--primary) !important;
+  border-radius: 8px !important;
+}
+
+#page2 div div .ant-btn.ant-btn-link,
+#page3 div div .ant-btn.ant-btn-link {
+  padding: 6px !important;
+}
+
+.label-file-upload-default .ant-btn-link {
+  padding: 2px 5px !important;
+  margin-top: 5px;
+}
+
+.button-circle {
+  background-color: var(--primary-40) !important;
+}
+
+.button-circle:hover {
+  background-color: var(--primary) !important;
+}
+
+.ant-btn-lg {
+  border-radius: 8px;
+}
+
+.ant-form-item-control-input-content .button-bar .ant-btn:hover,
+.ant-form-item-control-input-content .button-bar .ant-btn:active {
+  background-color: var(--primary-80) !important;
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.ant-form-item-control-input-content .button-bar .ant-btn:hover > span,
+.ant-form-item-control-input-content .button-bar .ant-btn > span {
+  font-weight: 500;
+  white-space: normal;
+  text-align: center;
+  text-transform: lowercase;
+  line-height: 38px !important;
+}
+
+.ant-form-item-control-input-content .button-bar .ant-btn:hover > span::first-letter,
+.ant-form-item-control-input-content .button-bar .ant-btn > span::first-letter {
+  text-transform: capitalize;
+}
+
+.ant-btn svg path,
+.ant-btn svg polygon,
+.ant-btn svg circle,
+.ant-btn svg rect {
+  fill: #fff !important;
+}
+
+.ant-btn:focus svg rect {
+  fill: var(--primary) !important;
+}
+
+/**
+      Signature Page Styles
+     */
+
+/* Drawing area for signature */
+#signature-pad {
+  border: 1px solid var(--primary);
+}
+
+#signature-pad:nth-child(2) {
+  margin: 20px 20px !important;
+}
+
+#signature-pad div .clear-btn {
+  padding: 2px 5px;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: -35px;
+  text-transform: capitalize;
+}
+
+/* Signature area after user accepts their signature */
+#signature-display {
+  background: var(--primary-80);
+}
+
+/*
+      Groups the "sign all documents" step.
+      Numbered step, title, description, checkbox and text
+     */
+.signature-action-review {
+  background: var(--primary-80);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.signature-action-item-container {
+  padding-left: 10px;
+}
+
+.signature-action-item-container .signature-action-item + div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0 !important;
+  justify-content: center;
+}
+
+/* The "Start signing" button */
+.react-swipeable-view-container div .forge-page div div .page-description.forge-page-description {
+  height: 80% !important;
+}
+
+.react-swipeable-view-container div .forge-page div div form {
+  position: relative;
+}
+
+.react-swipeable-view-container div .forge-page div div form .button-bar {
+  width: 100%;
+}
+
+#signature-next-btn {
+  background-color: var(--primary-80);
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+.signature-action-item .circle-icon {
+  background: var(--primary);
+}
+
+.signature-action-review.signature-action-item-container div .button-bar {
+  margin-left: -55px !important;
+}
+
+#sign-btn {
+  background-color: var(--primary);
+  margin-left: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+
+#sign-btn > span {
+  display: contents !important;
+  white-space: break-spaces !important;
+}
+
+.files-download-list-container {
+  border-radius: 8px;
+}
+
+.signature-action-review.signature-action-item-container div div div {
+  margin-left: 0 !important;
+}
+
+#accept-signature-btn {
+  margin-left: 0 !important;
+  width: 100%;
+}
+
+/* The workflow message alert */
+.workflow-message,
+.workflow-message-warning {
+  border-radius: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 30px !important;
+}
+
+.workflow-message-warning {
+  background: rgba(255, 170, 0, 0.08) !important;
+  color: #222 !important;
+}
+
+/**
+      Download files page styles
+     */
+
+/* When the user is done with the entire workflow (webforms and signing). This is the "Download" button. */
+#download-file-btn {
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+/** General icons */
+svg #edit #_ionicons_svg_md-create {
+  fill: var(--primary);
+}
+
+.ant-btn svg #ion-checkmark---Ionicons {
+  fill: #fff;
+}
+
+.label-list .ant-btn.ant-btn-faded.ant-btn-sm {
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+}
+
+.label-list .ant-btn.ant-btn-faded.ant-btn-sm svg {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+div[type='success'] {
+  background-color: var(--primary) !important;
+}
+
+.iTCaLs {
+  color: var(--primary) !important;
+}
+
+.dropzone .ant-btn svg polygon {
+  fill: var(--primary) !important;
+}
+
+/** Remove Powered by Anvil */
+a[href^="https://useanvil.com"], 
+a[href^="http://useanvil.com"]
+{
+  display: none;
+}
+
+/** Remove bottom Stepper */
+.forge-flow > div:last-child {
+  display: none;
+}
+
+/** Loader Spinner */
+.loading-spinner {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-left-color: var(--primary) !important;
+}
