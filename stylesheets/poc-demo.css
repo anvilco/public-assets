@@ -50,7 +50,7 @@ For a complete list of supported variables and classes, see the white labeling d
   --button-disabled-color: #B1B3BD;
 
   --button-disabled-icon-color: #FFFFFF;
-  --button-background: ##255ef7; /*light blue*/
+  --button-background: #255ef7; /*light blue*/
   --button-color: #FFFFFF;
   /* --button-hover-color: <color-value>; */
   --button-hover-background: #0C46E6;
