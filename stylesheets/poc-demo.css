@@ -13,7 +13,7 @@ For a complete list of supported variables and classes, see the white labeling d
   --root-white-color: #FFFFFF;
   --root-background: #F6F5F2;
   --root-text-color: var(--root-black-color);
-  --root-brand-color: #BA3523;
+  --root-brand-color: #BA3523; /*red */
   --root-brand-color-10: #BA3523;
   --root-brand-color-20: #BA3523;
   --root-green-color: #2ed27c;
@@ -29,7 +29,7 @@ For a complete list of supported variables and classes, see the white labeling d
 
   /******** backgrounds ********/
   --webform-background: #EFF5FE; 
-  --esign-background: #EFF5FE>; 
+  --esign-background: #EFF5FE; 
 
   /******** webform titles ********/
   --webform-title-font-weight: 500;
@@ -49,13 +49,13 @@ For a complete list of supported variables and classes, see the white labeling d
   --button-disabled-background: #B1B3BD;
   --button-disabled-color: #B1B3BD;
 
-  --button-disabled-icon-color: #2062fe;
-  /* --button-background: <color value>; */
-  --button-color: #255DF7; */
+  --button-disabled-icon-color: #FFFFFF;
+  --button-background: ##255ef7; /*light blue*/
+  --button-color: #FFFFFF;
   /* --button-hover-color: <color-value>; */
   --button-hover-background: #0C46E6;
   /* --button-focus-color: <color-value>; */
-  /* --button-focus-background: <color-value>; */
+   --button-focus-background: #0c46e6; /*dark blue*/
 
   /******** circle icons ********/
   /* --circle-icon-background: <color-value>; */
@@ -129,7 +129,7 @@ For a complete list of supported variables and classes, see the white labeling d
   /* - `.anvil-dropzone-drop-disabled` */
 
   /******** loading spinner ********/
-  /--loading-spinner-color: var(--root-brand-color);
+  --loading-spinner-color: var(--root-brand-color);
   --loading-spinner-size: 48px;
   --loading-spinner-thickness: 4px;
 
