@@ -77,6 +77,8 @@ For a complete list of supported variables and classes, see the white labeling d
   --field-input-border-radius: 30px;
   --field-input-border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   --field-input-border-top: 2px solid rgba(0, 0, 0, 0.1);
+  --field-input-border-left: 2px solid rgba(0, 0, 0, 0.1);
+  --field-input-border-right: 2px solid rgba(0, 0, 0, 0.1);
   --field-input-focus-box-shadow: none;
   --field-input-padding-x: 10px;
   /* --field-input-hover-border-color: <color value>; */
