@@ -58,16 +58,16 @@ For a complete list of supported variables and classes, see the white labeling d
   --button-focus-background: var(--root-dark-blue-color); /*dark blue*/
 
   /******** circle icons ********/
-  /* --circle-icon-background: <color-value>; */
+  --circle-icon-background: <color-value>;
   /* --circle-icon-color: <color-value; */
   /* --circle-icon-button-background: <color-value>; */
 
   /******** fields ********/
   --field-label-font-weight: 300;
   --field-error-box-shadow: 4px;
-  --field-error-background: var(--root-white-color);
+  --field-error-background: transparent;
 
-  /* --field-error-label-background: transparent; */
+  --field-error-label-background: transparent;
   /* --field-error-text-color: <color-value>; */
   /* --field-label-color: <color-value>; */
 
@@ -172,7 +172,7 @@ For a complete list of supported variables and classes, see the white labeling d
   /* --review-data-card-value-label-hover-color: <color-value>; */
   /* --review-data-card-item-edit-link-color: <color-value>; */
   /* --review-data-card-empty-value-required-border-color: <color-value>; */
-  /* --review-data-card-edit-button-color: <color-value>; */
+  --review-data-card-edit-button-color: transparent;
   /* --review-data-card-edit-button-hover-color: <color-value>; */
 }
 
