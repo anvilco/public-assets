@@ -14,10 +14,10 @@ For a complete list of supported variables and classes, see the white labeling d
   --root-background: #F6F5F2;
   --root-text-color: var(--root-black-color);
   --root-brand-color: #BA3523; /*red */
-  --root-brand-color-10: #BA3523;
-  --root-brand-color-20: #BA3523;
+  --root-brand-color-10: rgb(186, 53, 35, 0.4);
+  --root-brand-color-20: rgb(186, 53, 35, 0.8);;
   --root-blue-color: #255ef7;/*light blue*/
-  --root-blue-color-10: rgba(53, 94, 242, 0.4);
+  --root-dark-blue-color: rgba(44, 90, 244); /*dark blue*/
   --root-error-color: #e55252;
   --root-link-color: #0185a2;
   --root-link-hover-color: #00a298;
@@ -53,9 +53,9 @@ For a complete list of supported variables and classes, see the white labeling d
   --button-background: var(--root-blue-color); /*light blue*/
   --button-color: var(--root-white-color); ;
   --button-hover-color: var(--root-white-color);  
-  --button-hover-background: var(--root-blue-color-10);
+  --button-hover-background: var(--root-dark-blue-color);
   --button-focus-color: var(--root-white-color); 
-  --button-focus-background: var(--root-blue-color-10); /*dark blue*/
+  --button-focus-background: var(--root-dark-blue-color); /*dark blue*/
 
   /******** circle icons ********/
   /* --circle-icon-background: <color-value>; */
