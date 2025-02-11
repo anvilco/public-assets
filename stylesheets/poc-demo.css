@@ -16,8 +16,8 @@ For a complete list of supported variables and classes, see the white labeling d
   --root-brand-color: #BA3523; /*red */
   --root-brand-color-10: #BA3523;
   --root-brand-color-20: #BA3523;
-  --root-green-color: #2ed27c;
-  --root-green-color-10: rgba(46, 210, 124, 0.4);
+  --root-blue-color: #255ef7;/*light blue*/
+  --root-blue-color-10: rgba(53, 94, 242, 0.4);
   --root-error-color: #e55252;
   --root-link-color: #0185a2;
   --root-link-hover-color: #00a298;
@@ -49,13 +49,13 @@ For a complete list of supported variables and classes, see the white labeling d
   --button-disabled-background: #B1B3BD;
   --button-disabled-color: #B1B3BD;
 
-  --button-disabled-icon-color: #ffffff;
-  --button-background: #ffffff; 
-  --button-color: #255ef7;/*light blue*/
-  --button-hover-color: #0C46E6; 
-  --button-hover-background: #0C46E6;
-  /* --button-focus-color: <color-value>; */
-   --button-focus-background: #0c46e6; /*dark blue*/
+  --button-disabled-icon-color: var(--root-white-color); ;
+  --button-background: var(--root-blue-color); /*light blue*/
+  --button-color: var(--root-white-color); ;
+  --button-hover-color: var(--root-white-color);  
+  --button-hover-background: var(--root-blue-color-10);
+  --button-focus-color: var(--root-white-color); 
+  --button-focus-background: var(--root-blue-color-10); /*dark blue*/
 
   /******** circle icons ********/
   /* --circle-icon-background: <color-value>; */
@@ -64,7 +64,7 @@ For a complete list of supported variables and classes, see the white labeling d
 
   /******** fields ********/
   --field-label-font-weight: 300;
-  --field-error-box-shadow: none;
+  --field-error-box-shadow: 4px;
   --field-error-background: transparent;
 
   /* --field-error-label-background: transparent; */
@@ -74,6 +74,7 @@ For a complete list of supported variables and classes, see the white labeling d
   /******** field inputs ********/
   --field-input-background-color: transparent;
   --field-input-border: none;
+  --field-input-border-radius: none;
   --field-input-border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   --field-input-focus-box-shadow: none;
   --field-input-padding-x: 0;
