@@ -97,7 +97,7 @@ For a complete list of supported variables and classes, see the white labeling d
 
   /******** date picker ********/
   --date-picker-border: none;
-  --date-picker-today-border-radius: 10%;
+  --date-picker-today-border-radius: 30px;
   --date-picker-footer-button-font-style: italic;
   --date-picker-footer-button-font-weight: 500;
   --date-picker-days-of-week-font-style: italic;
