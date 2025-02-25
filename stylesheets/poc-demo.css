@@ -147,9 +147,9 @@ For a complete list of supported variables and classes, see the white labeling d
 
   /******** radio buttons ********/
   --radio-buttons-selected-background: #0C46E6;
-  --radio-buttons-clear-button-background: transparent;
-  --radio-buttons-clear-button-color: var(--root-blue-color);
-  --radio-buttons-clear-button-hover-color: var(--root-dark-blue-color);
+  --radio-buttons-clear-background: transparent;
+  --radio-buttons-clear-color: var(--root-blue-color);
+  --radio-buttons-clear-hover-color: var(--root-dark-blue-color);
   /* --radio-buttons-selected-color: <color-value>; */
   /* --radio-buttons-unselected-background-color: <color-value>; */
   /* --radio-buttons-unselected-color: <color-value>; */
