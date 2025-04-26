@@ -1,0 +1,41 @@
+@font-face {
+font-family: "Circular XX";
+font-weight: 500;
+src: url( "./fonts/CircularXXWeb-Medium.woff") format( "woff"),
+url( "./fonts/CircularXXWeb-Medium.woff2") format( "woff2");
+}
+
+@font-face {
+font-family: "Circular XX";
+font-weight: normal;
+src: url( "./fonts/CircularXXWeb-Regular.woff") format( "woff"),
+url( "./fonts/CircularXXWeb-Regular.woff2") format( "woff2");
+}
+
+:root {
+--cedar-primary: #174EEA;
+--cedar-gray-light: rgb( 250 250 250 / 1);
+--cedar-text: #2F3033;
+
+--root-black-color: var( --cedar-text);
+--root-white-color: var( --cedar-gray-light);
+--root-background: var( --root-white-color);
+--root-text-color: var( --root-black-color);
+--root-brand-color: var( --cedar-primary);
+--root-brand-color-10: rgba( 23, 78, 234, 0.1); /* 10% opacity */
+--root-brand-color-20: rgba( 23, 78, 234, 0.2); /* 20% opacity */
+--root-green-color: var( --cedar-primary);
+--root-green-color-10: var( --root-brand-color-10); /* 10% opacity */
+--root-error-color: #e55252;
+--root-link-color: #0185a2;
+--root-link-hover-color: #00a298;
+--root-border-radius: 8px;
+/* font */
+--root-font-family: "Circular XX", sans-serif;
+--root-font-weight: normal;
+
+/* buttons */
+--button-border-radius: 8px;
+--button-disabled-background: var( --root-brand-color-10);
+
+}
